@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 가상 클래스 선택자*/
+      a {
+        text-decoration: none;
+      }
+
+      /* 마우스가 a태그 위에 올라올때 */
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* 방문한 적이 없는 링크 */
+      a:link {
+        color: green;
+      }
+
+      /* 방문한 적이 있있는 링크 */
+      a:visited {
+        color: yellow;
+      }
+
+      button:hover {
+        background-color: blue;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      tbody > tr:nth-last-child(odd) {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com">구글</a>
+    <button type="button">조회</button>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>123</td>
+          <td>asdf</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>567</td>
+          <td>lkjh</td>
+        </tr>
+        <tr>
+          <td>유재석</td>
+          <td>123</td>
+          <td>asdf</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>567</td>
+          <td>lkjh</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

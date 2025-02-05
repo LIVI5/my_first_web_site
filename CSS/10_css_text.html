@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 정렬 */
+      .text-center {
+        text-align: center;
+      }
+
+      /* 텍스트 색상 */
+      .text-blue {
+        color: blue;
+      }
+
+      /* 텍스트 장식선 */
+      .text-overline {
+        text-decoration: overline;
+      }
+      .delline {
+        text-decoration: line-through;
+      }
+      .plain {
+        text-decoration: none;
+      }
+
+      /* text decoration */
+      /* 4가지 하위 property를 한줄에 작성 가능능*/
+      /* text-decoration-style : 장식선 스타일(직선, 점선 등) */
+      /* text-decoration-line : 장식 종류(밑줄, 윗줄, 가운데줄 등) */
+      /* text-decoration-thickness : 장식선 두께 */
+      .underover {
+        text-decoration: dashed underline overline red 4px;
+      }
+
+      /* 텍스트 변환 */
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .capitalize {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">가운데 정렬</h1>
+    <h2 class="text-blue">파란색</h2>
+    <h3 class="text-overline">윗줄이 그려진 글씨</h3>
+    <h3 class="delline">취소선</h3>
+    <a href="" class="plain">밑줄을 없앤 글씨입니다.</a>
+    <p class="underover">underover 클래스를 적용</p>
+    <p class="uppercase">transfer all alphabet to uppercase</p>
+    <p class="capitalize">all i want for christmas with you</p>
+
+    <!-- 사용자가 소문자로 입력하더라도 대문자로 입력하도록 -->
+    <!-- 다만 사용자가 보이는 것만 대문자로 보이는 것 -->
+    <!-- 실제 데이터는 소문자이기 때문에 자바스크립트에서 데이터를 대문자로 바꾸는 과정 포함시켜야함(touUpperCase()) -->
+    <input type="text" name="" id="" class="uppercase" />
+  </body>
+</html>

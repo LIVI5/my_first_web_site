@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. 색상명에 해당하는 키워드 사용 -->
+    <h1 style="background-color: blue">1번으로 적용</h1>
+    <!-- 2. 색상값 사용(RGB 0~255)-->
+    <p style="color: rgb(189, 70, 102)">2번으로 적용</p>
+    <!-- 2-1. RGBA : Alpha(투명도 0~1)-->
+    <p style="color: rgba(100, 80, 50, 0.5)">3번으로 적용</p>
+    <!-- 3. HEX 색상값 : 16진수 표기법. 빛의 3원색 RGB 조합으로 표기 (00~FF) -->
+    <h1 style="color: #ff0000">빨간색</h1>
+    <h1 style="color: #00ff00">초록색</h1>
+    <h1 style="color: #0000ff">파란색</h1>
+    <h1 style="color: #ffffff; background-color: #000000">검은바탕 흰글씨</h1>
+
+    <!-- 4. HSL 값 : 색조(H), 채도(saturation), 밝기(lightness) 3가지 값으로 구성 -->
+    <!-- 색조 : 0~360, 360:빨간색/120:초록색/240:파란색 -->
+    <!-- 채도 : 0~100%, 0%: 회색음영 -->
+    <!-- 밝기 : 0~100%, 100% 가장 밝은 값-->
+    <h2 style="color: hsl(360, 100%, 50%)">빨간색</h2>
+    <h2 style="color: hsl(180, 100%, 80%)">초록색</h2>
+    <h2 style="color: #0000ff">파란색</h2>
+    <h2 style="color: #ffffff; background-color: #000000">검은바탕 흰글씨</h2>
+
+    <!-- 4-1. HSLA : alpha(투명도) -->
+  </body>
+</html>

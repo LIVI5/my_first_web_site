@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 앞에서부터 있는 폰트부터 적용됨. 만약에 다 없자면 'monospace'에 있는 것중 지원하는 폰트로 적용 */
+      .font1 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .font2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .oblique {
+        font-style: oblique;
+      }
+
+      .weight400 {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="font1">font1 그룹을 적용한 문장</h1>
+    <p class="font2">font2 그룹을 적용한 문장</p>
+    <p class="font2 oblique">oblique 가 적용된 문장</p>
+    <br />
+    <!-- 폰트 굵기 -->
+    <p style="font-weight: normal">font-weight : normal</p>
+    <p style="font-weight: 400">font-weight : 400 (normal과 동일)</p>
+    <p style="font-weight: bold">font-weight : bold</p>
+    <p style="font-weight: 700">font-weight : 700 (bold와 동일)</p>
+    <!-- bolder : 상대적인 값 ~ 부모에 비해서 어떻게 될까? -->
+    <div style="font-weight: 100">
+      <p style="font-weight: bolder">부모가 100이므로 400으로 할당됨</p>
+    </div>
+    <div style="font-weight: 400">
+      <p style="font-weight: bolder">부모가 400이므로 700으로 할당됨</p>
+    </div>
+    <div style="font-weight: 600">
+      <p style="font-weight: bolder">부모가 600이므로 900으로 할당됨</p>
+    </div>
+
+    <br />
+    <!-- 폰트 크기 -->
+    <!-- 절대값 : xx-small, x-small, medium, large, x-large, xx-larger -->
+    <!-- 상대값 : larger, smaller -->
+    <!-- 길이 값 : em(부모 요소의 폰트 크기를 기준), rem(루트 요소의 폰트 크기 기준), px, pt(1pt==0.72인치)-->
+    <!-- 퍼센트(백분율) 값-->
+    <!-- 대부분의 브라우저에서 기본값으로 12pt=16px=1em=100% -->
+    <p style="font-size: 10px">font-size : 10px</p>
+  </body>
+</html>

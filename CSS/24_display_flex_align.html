@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+
+        flex-direction: row; /* x축: 좌->우 */
+        border: 3px dashed black;
+
+        /* 컨텐츠에 비해 컨테이너가 크면, 컨텐츠를 어떻게 배치할까? */
+        /* start: 주축의 시작점에 정렬, end: 주축의 끝점에 정렬, center:가운데정렬*/
+        /* justify-content : space-between, space-around, space-evenly */
+        justify-content: center;
+      }
+      .item {
+        background-color: azure;
+        border: 1px solid blue;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>

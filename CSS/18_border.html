@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* border : top, right, left, bottom */
+
+      div {
+        /* border : width, style, color */
+        border: 3px solid red;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+
+      /* 테투리 스타일 */
+      .solid {
+        border-style: solid;
+      }
+      .dashed {
+        border-style: dashed;
+      }
+      .dotted {
+        border-style: dotted;
+      }
+      .double {
+        border-style: double;
+      }
+      .groove {
+        border-style: groove;
+      }
+      .ridge {
+        border-style: ridge;
+      }
+      .inset {
+        border-style: inset;
+      }
+      .outset {
+        border-style: outset;
+      }
+
+      /* 테두리 스타일 */
+      .thick {
+        border-width: thick;
+      }
+      .medium {
+        border-width: medium;
+      }
+      .thin {
+        border-width: thin;
+      }
+      /* 테두리 모서리 둥글게게 */
+      .radius {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="solid radius"></div>
+    <div class="dashed thick radius"></div>
+    <div class="dotted thin"></div>
+    <div class="double radius"></div>
+    <div class="groove"></div>
+    <div class="ridge"></div>
+    <div class="inset"></div>
+    <div class="outset"></div>
+  </body>
+</html>

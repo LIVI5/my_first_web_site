@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+
+        flex-direction: row; /* x축: 좌->우 */
+        flex-direction: row-reverse; /* x축: 우->좌 */
+        flex-direction: column; /* y축: 위->아래 */
+        flex-direction: column-reverse; /* y축 아래-> 위*/
+
+        border: 3px dashed black;
+        width: 100%;
+      }
+      .item {
+        background-color: azure;
+        border: 1px solid blue;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-color: wheat;
+        color: black;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #333;
+        color: white;
+        justify-content: center;
+      }
+
+      .navbar a {
+        color: aliceblue;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        cursor: pointer;
+        color: coral;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .side {
+        flex: 20%;
+        background-color: whitesmoke;
+        padding: 20px;
+      }
+      .fakeimg {
+        background-color: darkgray;
+        width: 100%;
+        padding: 20px;
+      }
+      .main {
+        flex: 80%;
+        background-color: white;
+        padding: 20px;
+      }
+      .footer {
+        padding: 15px;
+        text-align: center;
+        background-color: aliceblue;
+      }
+
+      @media screen and (max-width: 768px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Who Am I</h1>
+    </div>
+    <div class="navbar">
+      <a href="">메뉴1</a>
+      <a href="">메뉴2</a>
+      <a href="">메뉴3</a>
+      <a href="">메뉴4</a>
+      <a href="#project5">메뉴5</a>
+    </div>
+    <div class="row">
+      <div class="side">
+        <div class="about">
+          <h2>About</h2>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>저는 23살 오은서입니다.</p>
+          <h3>Skiils</h3>
+          <p>C, C++, ...</p>
+          <div class="fakeimg" style="height: 40px; margin: 5px">Image</div>
+          <div class="fakeimg" style="height: 40px; margin: 5px">Image</div>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>프로젝트1</h2>
+          <h5>2021년 1월</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            이 프로젝트는 어떤 어떤 기술을 가지고 어떤 것을 해결하기 위해
+            진행되었습니다.
+          </p>
+        </div>
+        <div>
+          <h2>프로젝트2</h2>
+          <h5>2023년 2월</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            이 프로젝트는 어떤 어떤 기술을 가지고 어떤 것을 해결하기 위해
+            진행되었습니다.
+          </p>
+        </div>
+        <div>
+          <h2>프로젝트3</h2>
+          <h5>2023년 2월</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            이 프로젝트는 어떤 어떤 기술을 가지고 어떤 것을 해결하기 위해
+            진행되었습니다.
+          </p>
+        </div>
+        <div>
+          <h2>프로젝트4</h2>
+          <h5>2023년 2월</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            이 프로젝트는 어떤 어떤 기술을 가지고 어떤 것을 해결하기 위해
+            진행되었습니다.
+          </p>
+        </div>
+        <div id="project5">
+          <h2>프로젝트5</h2>
+          <h5>2023년 2월</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            이 프로젝트는 어떤 어떤 기술을 가지고 어떤 것을 해결하기 위해
+            진행되었습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Copyright Livi5</h3>
+    </div>
+  </body>
+</html>
